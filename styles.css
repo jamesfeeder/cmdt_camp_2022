@@ -49,10 +49,6 @@ header.content-wraper h1 {
   -webkit-background-clip: text;
 }
 
-.content {
-  width: 75%;
-}
-
 @media screen and (min-width: 768px) {
   nav .logo-placeholder {
     width: 72px;
@@ -67,5 +63,9 @@ header.content-wraper h1 {
   .content-wraper {
     display: flex;
     justify-content: flex-end;
+  }
+
+  header.content-wraper h1 {
+    width: 75%;
   }
 }
