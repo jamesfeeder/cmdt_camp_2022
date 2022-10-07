@@ -39,7 +39,7 @@ nav .social-buttons .icon-button:last-child {
 
 header.content-wraper h1 {
   margin: 0px;
-  font-size: calc((5 - 1) * 1.2vw + 1rem);
+  font-size: calc((5 - 1) * 1.2vh + 1rem);
   font-weight: 200;
   line-height: 1.2;
   letter-spacing: 0em;
@@ -67,5 +67,6 @@ header.content-wraper h1 {
 
   header.content-wraper h1 {
     width: 75%;
+    font-size: calc((5 - 1) * 1.2vw + 1rem);
   }
 }
