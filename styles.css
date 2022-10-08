@@ -1,5 +1,5 @@
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
   background-color: #f6f5f3;
 }
@@ -11,10 +11,9 @@ nav {
   align-items: center;
 }
 
-nav .logo-placeholder {
+nav .logo {
   width: 48px;
   height: 48px;
-  background-color: #4357ad;
 }
 
 nav .social-buttons {
@@ -22,10 +21,7 @@ nav .social-buttons {
 }
 
 nav .social-buttons .icon-button {
-  width: 24px;
-  height: 24px;
   margin-left: 1.3vw;
-  background-color: #c1666b;
   cursor: pointer;
 }
 
@@ -33,14 +29,23 @@ nav .social-buttons .icon-button:last-child {
   margin-right: 0px;
 }
 
-.content-wraper {
+.header-wrapper {
   padding: 6.6vmax 4vmax;
 }
 
-header.content-wraper h1 {
+.content-wrapper {
+  padding: 4vmax;
+}
+
+.content {
+  width: 100%;
+}
+
+header.header-wrapper h1 {
   margin: 0px;
+  font-family: "Playfair Display", serif;
   font-size: calc((5 - 1) * 1.2vh + 1rem);
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.2;
   letter-spacing: 0em;
   color: transparent;
@@ -49,24 +54,87 @@ header.content-wraper h1 {
   -webkit-background-clip: text;
 }
 
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content > * {
+  padding: 16px;
+}
+
+.text-content hr {
+  margin: 8px 0;
+  height: 1px;
+  border: none;
+  color: transparent;
+  background-color: black;
+}
+
+.text-content h4 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.text-content .content {
+  display: block;
+}
+
+.text-content .content p {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.text-content .content p:first-child {
+  margin-top: -4px;
+}
+
 @media screen and (min-width: 768px) {
-  nav .logo-placeholder {
+  nav .logo {
     width: 72px;
     height: 72px;
-    background-color: #c1666b;
   }
 
   nav .social-buttons {
     display: flex;
   }
 
-  .content-wraper {
+  .header-wrapper,
+  .content-wrapper {
     display: flex;
     justify-content: flex-end;
   }
 
-  header.content-wraper h1 {
-    width: 75%;
+  header.header-wrapper h1 {
     font-size: calc((5 - 1) * 1.2vw + 1rem);
+  }
+
+  .content,
+  .text-content {
+    width: 75%;
+  }
+
+  .text-content {
+    flex-direction: row;
+  }
+
+  .text-content .leading {
+    box-sizing: border-box;
+    width: 16%;
+  }
+
+  .text-content h4 {
+    margin: 0 5%;
+  }
+
+  .text-content .content {
+    width: 56%;
+  }
+
+  .text-content > *:first-child {
+    padding-left: 0;
   }
 }
