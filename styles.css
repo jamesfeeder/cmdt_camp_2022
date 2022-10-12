@@ -130,6 +130,10 @@ header.header-wrapper h1 {
   letter-spacing: 3;
 }
 
+.work a {
+  border: none;
+}
+
 .work img {
   position: absolute;
   right: 12%;
