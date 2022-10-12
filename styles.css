@@ -72,7 +72,7 @@ header.header-wrapper h1 {
 }
 
 .text-content > * {
-  padding: 16px;
+  padding: 16px 0px;
 }
 
 .text-content hr {
@@ -126,7 +126,7 @@ header.header-wrapper h1 {
   margin: 0;
   font-family: var(--serif-font);
   font-weight: 300;
-  font-size: 5rem;
+  font-size: 3.5rem;
   letter-spacing: 3;
 }
 
@@ -153,6 +153,7 @@ header.header-wrapper h1 {
 }
 
 footer.content-wrapper {
+  display: flex;
   height: 20%;
   justify-content: center;
   align-items: center;
@@ -160,7 +161,7 @@ footer.content-wrapper {
   font-weight: 300;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   nav .logo {
     width: 72px;
     height: 72px;
@@ -222,5 +223,6 @@ footer.content-wrapper {
 
   .work h1 {
     width: 75%;
+    font-size: 5rem;
   }
 }
