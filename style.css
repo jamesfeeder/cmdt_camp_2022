@@ -1,0 +1,134 @@
+/* fonts จาก Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=Raleway:wght@400;500&display=swap");
+
+/* ส่วนของลิงก์ต่างๆ ในหน้าเว็บ */
+a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+/* ฟอนต์หลักและสีพื้นหลัง */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  background-color: #f6f5f3;
+}
+
+/* ขนาดโลโก้เว็บเวอร์ชั่นจอโทรศัพท์ */
+nav .logo {
+  width: 48px;
+  height: 48px;
+}
+
+/* ข้อความส่วน intro */
+header.header-wrapper h1 {
+  margin: 0;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: transparent;
+  background: linear-gradient(90deg, #48a9a6 0%, #d4b483 100%);
+}
+
+/* ขนาดข้อความส่วน intro เวอร์ชั่นจอโทรศัพท์ */
+header.header-wrapper h1 {
+  font-size: calc((5 - 1) * 1.2vh + 1rem);
+}
+
+/* ขนาดและสีเส้นหน้าหัวข้อบทความเวอร์ชั่นจอโทรศัพท์ */
+.text-content hr {
+  margin: 8px 0;
+  height: 1px;
+  border: none;
+  color: transparent;
+  background-color: black;
+}
+
+/* หัวข้อบทความ */
+.text-content h5 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* เนื้อหาบทความ */
+.text-content .content p {
+  margin: 16px 0 0 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* ส่วนต่อท้ายบทความ */
+.text-content .content .content-trailing {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* เลขลำดับชิ้นงาน */
+.work h3 {
+  font-weight: 100;
+  margin: 0;
+}
+
+/* ชื่อชิ้นงาน */
+.work h2 {
+  margin: 0;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  letter-spacing: 3;
+}
+
+/* รูปแสดงตัวอย่างชิ้นงาน */
+.work img {
+  height: 30%;
+  max-width: 40%;
+}
+
+/* ข้อความปิดท้ายหน้าเว็บ */
+footer.content-wrapper {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+}
+
+/* 
+  ส่วนสำหรับปรับการแสดงผลบนเวอร์ชั่นจอคอมพิวเตอร์
+  ปรับเป็นเวอร์ชั่นคอมพิวเตอร์เมื่อขนาดหน้าต่าง/จอเกินหรือเท่ากับ 900 พิกเซล
+*/
+@media screen and (min-width: 900px) {
+  /* ขนาดโลโก้เว็บเวอร์ชั่นจอคอมพิวเตอร์ */
+  nav .logo {
+    width: 72px;
+    height: 72px;
+  }
+
+  /* ขนาดข้อความส่วน intro เวอร์ชั่นจอคอมพิวเตอร์ */
+  header.header-wrapper h1 {
+    font-size: calc((5 - 1) * 1.2vw + 1rem);
+  }
+
+  /* ขนาดเส้นหน้าหัวข้อบทความเวอร์ชั่นจอคอมพิวเตอร์ */
+  .text-content .leading {
+    box-sizing: border-box;
+    width: 16%;
+  }
+
+  /* ขนาดช่องหัวข้อบทความเวอร์ชั่นจอคอมพิวเตอร์ */
+  .text-content h5 {
+    text-align: center;
+    width: 16%;
+  }
+
+  /* ขนาดช่องเนื้อหาบทความเวอร์ชั่นจอคอมพิวเตอร์ */
+  .text-content .content {
+    width: 56%;
+  }
+
+  /* ขนาดชื่อชิ้นงานเวอร์ชั่นจอคอมพิวเตอร์ */
+  .work h2 {
+    font-size: 5rem;
+  }
+}
